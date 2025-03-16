@@ -26,11 +26,11 @@ Text recognition is a great compliment.
 
 # Training Approach
 
-Iain has labeled training data (food package images). It's pulled from datasets on huggingface and the scripts are in this project.
+Iain has labeled ~200 training data (food package images). It's pulled from datasets on huggingface and the scripts are in this project.
 
-YOLO V5 (via google colab) was used to train the detection model. Images were labeled on RoboFlow.
+YOLO V5 (via [google colab](https://colab.research.google.com/drive/1ercLQs1rCQbTgoLBCyqB4S9rajaGFfKt?usp=sharing)) was used to train the detection model. Images were labeled on RoboFlow.
 - Note: Model had to be export to a format usable in iOS (see [file](2_convert_model.sh))
 
-CreateML (on local mac) was used to train the classification model.
+CreateML (on local mac) was used to train the classification model. Used Image Feature Print V2 with 50 iterations.
 
 Model/weight outputs are in the iOS project.
