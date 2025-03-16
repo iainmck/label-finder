@@ -7,7 +7,7 @@ Three techniques are applied:
 - **Image classification**: CreateML model trained to say if the image as a whole contains or doesn't contain a nutrition label
 - **Text recognition / OCR**: iOS built-in text recognizer to check for terms we'd expect in a nutrition label
 
-## Conclusions
+## Observations
 
 The detection model is the most precise.
 - Because it knows the exact label location, we can determine if the label is cut off or too small.
