@@ -1,0 +1,12 @@
+# To download data
+tqdm
+requests
+datasets
+
+# For model conversion and compression
+ultralytics
+coremltools
+
+# For Apple's mltools, highest supported torch is 2.5.0
+torch==2.5.0
+torchvision

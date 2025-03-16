@@ -1,0 +1,8 @@
+path: ../LabelClassifier/images/test_datasets/boundary_detection_yolo
+
+train: train/images
+val: val/images
+test: test/images
+
+nc: 1
+names: ['nutrition_label']
