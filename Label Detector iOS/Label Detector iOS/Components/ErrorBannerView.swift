@@ -8,11 +8,26 @@
 import SwiftUI
 
 struct ErrorBannerView: View {
+    let message: String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            HStack {
+                Image(systemName: "exclamationmark.triangle.fill")
+                    .foregroundColor(.yellow)
+                
+                Text(message)
+                    .font(.callout)
+                    .foregroundColor(.white)
+                
+                Spacer()
+            }
+            .padding()
+            .background(Color.red.opacity(0.8))
+        }
     }
 }
 
 #Preview {
-    ErrorBannerView()
+    ErrorBannerView(message: "There was an issue")
 }

@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct Label_Detector_iOSApp: App {
+struct LabelDetectorApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
